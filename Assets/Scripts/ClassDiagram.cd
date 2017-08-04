@@ -1,0 +1,1261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Destructible2D.D2dBackground" Collapsed="true">
+    <Position X="40" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAABAAAAAAAAkAAAAAAAAAIEAIAACAAAAAAgAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dBackground.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dBullet" Collapsed="true">
+    <Position X="41.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQUAAIAAmAAAAAAAAAAAIABAAAAAAABAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dCameraShake" Collapsed="true">
+    <Position X="45.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABQAAAAADAAAAAIAAAAAAAIAAAAAAAAAAAAEg=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dCameraShake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dClickToExplode" Collapsed="true">
+    <Position X="47" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAIAAAAAAEAABAAAAAAACAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dClickToExplode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dClickToSpawn" Collapsed="true">
+    <Position X="48.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAgAAAAAAAAAAEAAAAAAAAAACAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dClickToSpawn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dClickToStamp" Collapsed="true">
+    <Position X="50.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAAAAAgAAAAAAAAAAAAAAAAgAEAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dClickToStamp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dColliderlessImpact" Collapsed="true">
+    <Position X="54" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAAAAAAAAAAAAAAAAAAAABAAAIAAAACAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dColliderlessImpact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dCompoundPart" Collapsed="true">
+    <Position X="40" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAIAAAAAAAAIAAAAQAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dCompoundPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dDragToShoot" Collapsed="true">
+    <Position X="50.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAADCAAAAAAAAAAAIAAAEAEAAAAIAAACBAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dDragToShoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dDragToSlice" Collapsed="true">
+    <Position X="52.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAAAADAAAAAAAAAAAAIAAAEgEAAAAAAAACBAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dDragToSlice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dDragToThrow" Collapsed="true">
+    <Position X="54" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAEAICAAAAAAYAAAAAIAAAEAEAAAAAAAACBAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dDragToThrow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dExplosion" Collapsed="true">
+    <Position X="40" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAACAAAACGBAAAAAAAAAAAAAAAAIAAAAACAAgQAIAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dExplosion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dFlipper" Collapsed="true">
+    <Position X="45.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAABAIBAAAAAAAACAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dFlipper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dFollow" Collapsed="true">
+    <Position X="54" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAACAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dFollow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dGui_Editor" Collapsed="true">
+    <Position X="6.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dGui.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dGui" Collapsed="true">
+    <Position X="55.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAABAAAAAAAAAAAAAAAAAUAAAAAAEAAFCAARAAAIA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dGui.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dGun" Collapsed="true">
+    <Position X="38.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAABAAAIgAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dGun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dHealDamage_Editor" Collapsed="true">
+    <Position X="8.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dHealDamage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dHealDamage" Collapsed="true">
+    <Position X="40" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAQAACAAAAAAAAAAAEAAAAAAACAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dHealDamage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dMovingTarget" Collapsed="true">
+    <Position X="47" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhRAAAAQGAIAgBAAAAAAAACAACAAAAAIAAAAAEBAAEA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dMovingTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dPlayerCamera" Collapsed="true">
+    <Position X="48.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAQEAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dPlayerCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dPlayerCar" Collapsed="true">
+    <Position X="50.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgBAAAgAAAAAAAAAAACAAAAAAwAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dPlayerCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dPlayerSpaceship" Collapsed="true">
+    <Position X="52.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACBAgAAABIBQIBAAAAQACAICEEAAAAAACABAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dPlayerSpaceship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dRandomizeSound" Collapsed="true">
+    <Position X="41.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAgAAEAAAAAAgAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dRandomizeSound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dRepeatStamp_Editor" Collapsed="true">
+    <Position X="13" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dRepeatStamp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dRepeatStamp" Collapsed="true">
+    <Position X="43.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAAAAAgAAAAAAAAAAAACAIAgAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dRepeatStamp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dShake" Collapsed="true">
+    <Position X="48.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEg=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dShake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dSpawner_Editor" Collapsed="true">
+    <Position X="15.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dSpawner" Collapsed="true">
+    <Position X="54" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAjAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dTile" Collapsed="true">
+    <Position X="40" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAAAAAgCAAAAAAAAAAAAAAEAAAAAAAAAAAgIA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dWaypoints" Collapsed="true">
+    <Position X="43.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAgIAwAAAAARAAAAAAAAAAABAAAAEAAAAAFA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dWaypoints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dWheel_Editor" Collapsed="true">
+    <Position X="10.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dWheel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dWheel" Collapsed="true">
+    <Position X="45.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAABAIAAAAEBAAAACAAAAAE=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Examples\Scripts\D2dWheel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dAutoCollider" Collapsed="true">
+    <Position X="13.5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAIAAAAAAAAAgAAQAAACAAABAACAAACAAAAAQAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dAutoCollider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dCalculateMass" Collapsed="true">
+    <Position X="43.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAIAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAgAACAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dCalculateMass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dCollider" Collapsed="true">
+    <Position X="13.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEYBAAAACSAAAAIgAAyAAACAAAAAACAIAAAAQCAUCAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dCollider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dColliderBuilder" Collapsed="true">
+    <Position X="52.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAGADAAAAAAAABAAAAAAACAQIAABAAAoICAIAIgAQ=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dColliderBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dCollisionHandler" Collapsed="true">
+    <Position X="38.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAACQAACAAAQAAAAAKAAAIAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dCollisionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dDestroyer" Collapsed="true">
+    <Position X="45.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAEABBAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dDestroyer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dDestructible" Collapsed="true">
+    <Position X="47" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAOAYU6HAAJRoAIwkFViLgXkRgPlDaDY0RkA8CR0eNI=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dDestructible.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dEdgeCollider" Collapsed="true">
+    <Position X="15.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQhQAQAAAiKAEAAACAAACCAAAAQCAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEdgeCollider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dEdgeColliderCell" Collapsed="true">
+    <Position X="55.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAQAAAQAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEdgeColliderCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dEditor&lt;T&gt;" Collapsed="true">
+    <Position X="10.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YEAAFAAAAgAABAAAQEAAKCIAEAgAAFAAAIgEEAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dDestructibleListEvent" Collapsed="true">
+    <Position X="48.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dCollision2DEvent" Collapsed="true">
+    <Position X="55.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dFloatFloatEvent" Collapsed="true">
+    <Position X="47" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dVector2Event" Collapsed="true">
+    <Position X="41.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dD2dRectEvent" Collapsed="true">
+    <Position X="41.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dD2dVector2D2dVector2Event" Collapsed="true">
+    <Position X="43.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dEvent" Collapsed="true">
+    <Position X="38.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dFixture" Collapsed="true">
+    <Position X="41.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAAAAIAAAIAAAQAAQAiAAEAAAAIAAAAAAAAiIA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dFixtureGroup" Collapsed="true">
+    <Position X="43.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAAAAAAAEBg=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dFixtureGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dFloodfill" Collapsed="true">
+    <Position X="48.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAABAQAQAAAgAECRACIIAAAAEIAAAAAgJA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dFloodfill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dFloodfillIsland" Collapsed="true">
+    <Position X="50.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAIAAAAABAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dFloodfillIsland.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dFloodfillPixel" Collapsed="true">
+    <Position X="52.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dFloodfillPixel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dFracturer" Collapsed="true">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABAAAAAQAAAAAAAAAAAAAQAAAEAAAJAAAABAEACBA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dFracturer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dHelper" Collapsed="true">
+    <Position X="41.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iUAAAgBCAQAARQCFAiEAMAAEMTDFAAAgggECgAVBAkI=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dHit" Collapsed="true">
+    <Position X="43.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAgAAABAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dHit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dLinkedList&lt;T&gt;" Collapsed="true">
+    <Position X="45.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgABAAAAAAAQAAAAAAJAQAEAAACAAAAAACAABAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dLinkedList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dPolygonCollider" Collapsed="true">
+    <Position X="11.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQhQAQAAAiKAEAAACAAACCAAAAQCAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dPolygonCollider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dPolygonColliderCell" Collapsed="true">
+    <Position X="54" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgQAAgAAAAAAAAACAAAAAAAAQAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dPolygonColliderCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dPool&lt;T&gt;" Collapsed="true">
+    <Position X="55.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dPopupAttribute" Collapsed="true">
+    <Position X="38.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dPopupAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dPopupDrawer" Collapsed="true">
+    <Position X="40" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dPopupAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dQuadFracturer" Collapsed="true">
+    <Position X="10.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAACCAABAAAAAAAAAgAAiBAggkEAMAAQAAAAAAAg=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dQuadFracturer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dRequirements" Collapsed="true">
+    <Position X="45.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAACAIAQAACACAAAAgQICAAAIIgAAAACJACAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dRequirements.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dRetainVelocity" Collapsed="true">
+    <Position X="47" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAIAAAQAAAAAABAAAQAIAAQAAAAACAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dRetainVelocity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dSnapshot" Collapsed="true">
+    <Position X="50.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAEAACBAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dSorter" Collapsed="true">
+    <Position X="52.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAgAAAAQAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dSorter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dSplitGroup" Collapsed="true">
+    <Position X="55.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAABAAAACCAAQBAAKBAgAABAgIA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dSplitGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destructible2D.D2dSplitPixel" Collapsed="true">
+    <Position X="38.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAYAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dSplitPixel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanSliderToArg" Collapsed="true">
+    <Position X="45.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEAAAAAAAAABEA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Examples\LeanSliderToArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanCulture" Collapsed="true">
+    <Position X="50.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanCulture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLanguageNameDrawer" Collapsed="true">
+    <Position X="54" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLanguageNameAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLanguageNameAttribute" Collapsed="true">
+    <Position X="52.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLanguageNameAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLocalization" Collapsed="true">
+    <Position X="55.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oBEAAggSCUAAAAEgAAEAAIBEAAAQBAAIIAAAIAABCAE=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLocalization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLocalizationLoader" Collapsed="true">
+    <Position X="38.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAEAAiAAAAAAAAAAAAAAAAAAAAAABAQIAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLocalizationLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLocalizedAudioSource" Collapsed="true">
+    <Position X="28" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLocalizedAudioSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLocalizedBehaviour" Collapsed="true">
+    <Position X="26.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEABIAAAAAACAAIAAAABAAACAA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLocalizedBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLocalizedImage" Collapsed="true">
+    <Position X="30.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLocalizedImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLocalizedSpriteRenderer" Collapsed="true">
+    <Position X="32.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLocalizedSpriteRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLocalizedText" Collapsed="true">
+    <Position X="21.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLocalizedText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLocalizedTextArgs" Collapsed="true">
+    <Position X="23.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAAAAAEAEA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLocalizedTextArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanLocalizedTextFont" Collapsed="true">
+    <Position X="25.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanLocalizedTextFont.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanPhrase" Collapsed="true">
+    <Position X="40" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAARAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanPhrase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanPhraseNameDrawer" Collapsed="true">
+    <Position X="43.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanPhraseNameAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanPhraseNameAttribute" Collapsed="true">
+    <Position X="41.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanPhraseNameAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Localization.LeanTranslation" Collapsed="true">
+    <Position X="47" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAgAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Packages\LeanLocalization\Scripts\LeanTranslation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cakeslice.OutlineAnimation" Collapsed="true">
+    <Position X="41.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\OutlineEffect\Demo\OutlineAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cakeslice.Rotate" Collapsed="true">
+    <Position X="55.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\OutlineEffect\Demo\Rotate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cakeslice.Toggle" Collapsed="true">
+    <Position X="54" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Packages\OutlineEffect\Demo\Toggle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cakeslice.LinkedSet&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAgBAAAAAABAAAAAABAAEAAAAAAAQAAAAAABQAAA=</HashCode>
+      <FileName>Assets\Packages\OutlineEffect\LinkedSet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="cakeslice.Outline" Collapsed="true">
+    <Position X="40" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAIAAAAAAAAAAAAAAAAAAACIAACAAAAASEA=</HashCode>
+      <FileName>Assets\Packages\OutlineEffect\Outline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cakeslice.OutlineEffect" Collapsed="true">
+    <Position X="43.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADABQADQASACRmAAAAUhAgIAEwABRBEIQAAEFCIECkA=</HashCode>
+      <FileName>Assets\Packages\OutlineEffect\OutlineEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParticleTester" Collapsed="true">
+    <Position X="45.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACwAAAgAAAAAAABAQARAABAAAEACAAAAAAmAAgAAEEA=</HashCode>
+      <FileName>Assets\Packages\SimpleParticlePack\Scripts\ParticleTester.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpriteGlow" Collapsed="true">
+    <Position X="50.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABIAAAABAgACAAAAEACAACAAgAAgAIEAAQEABQCAA=</HashCode>
+      <FileName>Assets\Packages\SpriteGlow\SpriteGlow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExampleWheelController" Collapsed="true">
+    <Position X="55.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBTest" Collapsed="true">
+    <Position X="50.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAACAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DBTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GradientTest" Collapsed="true">
+    <Position X="45.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAiBAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\GradientTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManager" Collapsed="true">
+    <Position X="41.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAQAAAAAAQAAAAAAAAAAAAAAAAAAAAgAEA=</HashCode>
+      <FileName>Assets\Scripts\Managers\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoundManager" Collapsed="true">
+    <Position X="43.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAgAAAAAAAAAAAAAAIAAAAAAAAAgAgAEI=</HashCode>
+      <FileName>Assets\Scripts\Managers\SoundManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIManager" Collapsed="true">
+    <Position X="40" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\UIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PowerUp" Collapsed="true">
+    <Position X="52.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PowerUps\PowerUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shield" Collapsed="true">
+    <Position X="38.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAACAAAAAQAAAgAAAAAAAAAAAGAAAAAAAAoAA=</HashCode>
+      <FileName>Assets\Scripts\Spaceships\Shields\Shield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShieldConfig" Collapsed="true">
+    <Position X="40" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spaceships\Shields\ShieldConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon" Collapsed="true">
+    <Position X="43.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spaceships\Weapons\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StartGameButton" Collapsed="true">
+    <Position X="52.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UserInterface\StartGameButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MouseLook" Collapsed="true">
+    <Position X="54" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAEACAAAAAAAAGAAAAAAIAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\BasicControllers\Scripts\MouseLook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner" Collapsed="true">
+    <Position X="48.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAACCIgAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\Scripts\C#\Spawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Damage" Collapsed="true">
+    <Position X="47" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAihCIACIAAAAAwAAAAAAAAAAAIAAoAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\Scripts\C#\Weapon\Damage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DamageManager" Collapsed="true">
+    <Position X="48.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAgACAAAAAAAAAAAAAAQEAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\Scripts\C#\Weapon\DamageManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Explosion" Collapsed="true">
+    <Position X="38.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\Scripts\C#\Weapon\Explosion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExplosionObject" Collapsed="true">
+    <Position X="40" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAAAAAAAIAAAAAAAAAAAAABCAIAAAIAgA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\Scripts\C#\Weapon\ExplosionObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GunShooter" Collapsed="true">
+    <Position X="48.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAgAAAEAAAAAAIAIAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\Scripts\C#\Weapon\GunShooter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoverBullet" Collapsed="true">
+    <Position X="55.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAABAAAAAAAABEAAAAIAoAA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\Scripts\C#\Weapon\MoverBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoverMissile" Collapsed="true">
+    <Position X="38.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAABAAGAAIAAAIQIBAAABiAAAAAAEAAAAAAIAwAA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\Scripts\C#\Weapon\MoverMissile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeaponLauncher" Collapsed="true">
+    <Position X="45.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBSAAgiAAOYAJAAAIAQBAAABAAUAAAAAAQCAECAoRAA=</HashCode>
+      <FileName>Assets\WeaponSystem\WeaponSystem\Scripts\C#\Weapon\WeaponLauncher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.GetSetAttribute" Collapsed="true">
+    <Position X="43.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.MinAttribute" Collapsed="true">
+    <Position X="52.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.TrackballAttribute" Collapsed="true">
+    <Position X="55.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.TrackballGroupAttribute" Collapsed="true">
+    <Position X="38.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.AmbientOcclusionComponent" Collapsed="true">
+    <Position X="12.5" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAAAAAAIAAAIAgAAAAAABAAAAAAAEAAAICAABAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.BloomComponent" Collapsed="true">
+    <Position X="14.75" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAIAAAGAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\BloomComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.BuiltinDebugViewsComponent" Collapsed="true">
+    <Position X="3.5" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgKAAAAAAAAAAAgAAAAAABAAAAAAIEAAQICAAJAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.ChromaticAberrationComponent" Collapsed="true">
+    <Position X="19.25" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAMAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.ColorGradingComponent" Collapsed="true">
+    <Position X="21.5" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEkAACAAAABAQAAAAQICAAMAgIAgCAAIBAGgIAEBAEA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.DepthOfFieldComponent" Collapsed="true">
+    <Position X="23.75" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgAAAgBAQAAAAgAAAIAAAAAAQAAIAAAAICAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.DitheringComponent" Collapsed="true">
+    <Position X="26" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgUAAAAgBAAAAAAAAAAAAIAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\DitheringComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.EyeAdaptationComponent" Collapsed="true">
+    <Position X="28.25" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAIgAAQAAAAAIAIAIEAAACAAQIAAKAIAgAKAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.FogComponent" Collapsed="true">
+    <Position X="5.75" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAABAAAAAAAEAAAICAABAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\FogComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.FxaaComponent" Collapsed="true">
+    <Position X="30.5" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\FxaaComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.GrainComponent" Collapsed="true">
+    <Position X="32.75" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAIAAAAIACAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\GrainComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.MotionBlurComponent" Collapsed="true">
+    <Position X="8" Y="21" Width="1.5" />
+    <NestedTypes>
+      <Class Name="UnityEngine.PostProcessing.MotionBlurComponent.Uniforms" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="UnityEngine.PostProcessing.MotionBlurComponent.Pass" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="UnityEngine.PostProcessing.MotionBlurComponent.ReconstructionFilter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="UnityEngine.PostProcessing.MotionBlurComponent.FrameBlendingFilter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAgDAIAAABAAAAAAIEAAAIAgADAg=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.ScreenSpaceReflectionComponent" Collapsed="true">
+    <Position X="10.25" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAAAAAIAgAAAAAABAAAAAAAEAQAIAAEDAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.TaaComponent" Collapsed="true">
+    <Position X="35" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAAAAAAAAAgAAAAAwGAAAAAABAAAACIABACYCgAEAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\TaaComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.UserLutComponent" Collapsed="true">
+    <Position X="37.25" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAACAIAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\UserLutComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.VignetteComponent" Collapsed="true">
+    <Position X="17" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Components\VignetteComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.AmbientOcclusionModel" Collapsed="true">
+    <Position X="6" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.AntialiasingModel" Collapsed="true">
+    <Position X="10.5" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.BloomModel" Collapsed="true">
+    <Position X="12.75" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\BloomModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.BuiltinDebugViewsModel" Collapsed="true">
+    <Position X="15" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAABgAAAAAAAAAAAACAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.ChromaticAberrationModel" Collapsed="true">
+    <Position X="17.25" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.ColorGradingModel" Collapsed="true">
+    <Position X="19.5" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAIAEAAAAAAACAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.DepthOfFieldModel" Collapsed="true">
+    <Position X="21.75" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.DitheringModel" Collapsed="true">
+    <Position X="24" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\DitheringModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.EyeAdaptationModel" Collapsed="true">
+    <Position X="26.25" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.FogModel" Collapsed="true">
+    <Position X="28.5" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\FogModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.GrainModel" Collapsed="true">
+    <Position X="30.75" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\GrainModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.MotionBlurModel" Collapsed="true">
+    <Position X="33" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.ScreenSpaceReflectionModel" Collapsed="true">
+    <Position X="35.25" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.UserLutModel" Collapsed="true">
+    <Position X="3.75" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\UserLutModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.VignetteModel" Collapsed="true">
+    <Position X="8.25" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Models\VignetteModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.PostProcessingBehaviour" Collapsed="true">
+    <Position X="47" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFKgAQBAQAAsQIAAAACkCACIgWCBGAUIACCEAARIHEA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.PostProcessingComponentBase" Collapsed="true">
+    <Position X="20.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAACAAAAAAgAAAAAAAAAAAAAIAAAAIAAACAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\PostProcessingComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.PostProcessingComponent&lt;T&gt;" Collapsed="true">
+    <Position X="20.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAACAAAIAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\PostProcessingComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.PostProcessingComponentCommandBuffer&lt;T&gt;" Collapsed="true">
+    <Position X="8" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAABAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\PostProcessingComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.PostProcessingComponentRenderTexture&lt;T&gt;" Collapsed="true">
+    <Position X="26" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\PostProcessingComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.PostProcessingContext" Collapsed="true">
+    <Position X="48.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAgQABAQARAAAIIAAAAAAUAAAAAAAAAACAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\PostProcessingContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.PostProcessingModel" Collapsed="true">
+    <Position X="19.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAGAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\PostProcessingModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.PostProcessingProfile" Collapsed="true">
+    <Position X="50.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAUADBgAAAAAAAAAEAEgAAAAAAABAAAAAAAAAAAQAEA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\PostProcessingProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.ColorGradingCurve" Collapsed="true">
+    <Position X="38.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAQAAAAAAAAAAAgAAQACAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.GraphicsUtils" Collapsed="true">
+    <Position X="47" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAACCAAAAAAQAAAAAAAAABDAAAAAQQAAAAAAAg=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.MaterialFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.RenderTextureFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="54" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAABAAAAAAAAAAAgAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NeonSpace.Accounts.User" Collapsed="true">
+    <Position X="41.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAEAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Accounts\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeonSpace.Events.GameEvent" Collapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Events\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeonSpace.Events.Events" Collapsed="true">
+    <Position X="54" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAJAAAAAACAAAAAQAIAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Assets\Scripts\Events\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeonSpace.Events.GameStateEvent" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Scripts\Events\GameEvents\GameStateEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeonSpace.Events.EventManager" Collapsed="true">
+    <Position X="52.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\EventManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeonSpace.Shop.Shop" Collapsed="true">
+    <Position X="41.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Shop\Shop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeonSpace.Spaceship" Collapsed="true">
+    <Position X="45.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAACEAAAQAAAAAAIAAAAAAAAgAAAAAAAAEKAA=</HashCode>
+      <FileName>Assets\Scripts\Spaceships\Spaceship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeonSpace.SpaceshipInput" Collapsed="true">
+    <Position X="47" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spaceships\SpaceshipInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Destructible2D.D2dQuad" Collapsed="true">
+    <Position X="38.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQQAAAAgAAAAAAAAAAAADBAAAAQAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dQuad.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Destructible2D.D2dRect" Collapsed="true">
+    <Position X="40" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAABAAABAAAACAACEAQAAQAAAAAACAAAABAAAA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dRect.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Destructible2D.D2dVector2" Collapsed="true">
+    <Position X="41.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAE4AUCAAAAAAAAAIAAAAAAAAEQYiA=</HashCode>
+      <FileName>Assets\Packages\Destructible 2D\Scripts\D2dVector2.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="GameState" Collapsed="true">
+    <Position X="38.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAggAAAAAAAAAAAAAAAAAAIAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

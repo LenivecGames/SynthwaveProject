@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{48D6EEBF-67B7-D5FA-91A2-595F44F811D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;UNITY_PURCHASING;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_POST_PROCESSING_STACK_V2;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/Applications/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/Applications/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Effects\D_FX\Scripts\D_FX_HaltParticle.cs" />
+     <Compile Include="Assets\Effects\D_FX\Scripts\D_FX_LightFade.cs" />
+     <Compile Include="Assets\Extensions\CoonGames\Common\Attributes\ConditionalHide\ConditionalHideAttribute.cs" />
+     <Compile Include="Assets\Extensions\CoonGames\Common\Attributes\Prefab\PrefabAttribute.cs" />
+     <Compile Include="Assets\Extensions\CoonGames\Shop\ISerializable.cs" />
+     <Compile Include="Assets\Extensions\CoonGames\Shop\IWallet.cs" />
+     <Compile Include="Assets\Extensions\CoonGames\Shop\Shop.cs" />
+     <Compile Include="Assets\Extensions\CoonGames\Shop\TestClass.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dBackground.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dBullet.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dCameraShake.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dClickToExplode.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dClickToSpawn.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dClickToStamp.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dColliderlessImpact.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dCompoundPart.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dDragToShoot.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dDragToSlice.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dDragToThrow.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dExplosion.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dFlipper.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dFollow.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dGui.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dGun.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dHealDamage.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dMovingTarget.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dPlayerCamera.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dPlayerCar.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dPlayerSpaceship.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dRandomizeSound.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dRepeatStamp.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dShake.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dSpawner.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dTile.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dWaypoints.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Examples\Scripts\D2dWheel.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dAutoCollider.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dCalculateMass.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dCollider.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dColliderBuilder.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dCollisionHandler.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dDestroyer.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dDestructible.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dEdgeCollider.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dEdgeColliderCell.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dEditor.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dEvents.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dFixture.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dFixtureGroup.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dFloodfill.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dFloodfillIsland.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dFloodfillPixel.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dFracturer.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dHelper.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dHelper_Editor.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dHit.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dLinkedList.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dPolygonCollider.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dPolygonColliderCell.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dPool.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dPopupAttribute.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dQuad.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dQuadFracturer.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dRect.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dRequirements.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dRetainVelocity.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dSnapshot.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dSorter.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dSplitGroup.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dSplitPixel.cs" />
+     <Compile Include="Assets\Extensions\Destructible 2D\Scripts\D2dVector2.cs" />
+     <Compile Include="Assets\Extensions\EasyButtons\ButtonAttribute.cs" />
+     <Compile Include="Assets\Extensions\EasyButtons\ButtonsExample.cs" />
+     <Compile Include="Assets\Extensions\EasyButtons\ScriptableObjectExample.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Examples\LeanSliderToArg.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanCulture.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLanguageNameAttribute.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLocalization.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLocalizationLoader.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLocalizedAudioSource.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLocalizedBehaviour.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLocalizedImage.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLocalizedSpriteRenderer.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLocalizedText.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLocalizedTextArgs.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanLocalizedTextFont.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanPhrase.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanPhraseNameAttribute.cs" />
+     <Compile Include="Assets\Extensions\LeanLocalization\Scripts\LeanTranslation.cs" />
+     <Compile Include="Assets\Extensions\LeanPool\Examples\SimpleDelayedPooling.cs" />
+     <Compile Include="Assets\Extensions\LeanPool\Examples\SimplePoolBenchmark.cs" />
+     <Compile Include="Assets\Extensions\LeanPool\Examples\SimplePooling.cs" />
+     <Compile Include="Assets\Extensions\LeanPool\Scripts\LeanClassPool.cs" />
+     <Compile Include="Assets\Extensions\LeanPool\Scripts\LeanPool.cs" />
+     <Compile Include="Assets\Extensions\LeanPool\Scripts\LeanPooledRigidbody.cs" />
+     <Compile Include="Assets\Extensions\LeanPool\Scripts\LeanPooledRigidbody2D.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanCameraMove.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanCameraMoveSmooth.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanCameraZoom.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanCameraZoomSmooth.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanDestroy.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanFingerDown.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanFingerHeld.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanFingerLine.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanFingerSet.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanFingerSwipe.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanFingerTap.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanFingerTrail.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanFingerUp.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanMultiTap.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanMultiTapInfo.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanOpenUrl.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanPitchYaw.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanPitchYawSmooth.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanPressSelect.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanRotate.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanScale.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSelect.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSelectableBehaviour.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSelectableRendererColor.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSelectableSpriteRendererColor.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSelectableTranslateInertia2D.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSelectableTranslateInertia3D.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSpawn.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSwipeDirection4.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSwipeDirection8.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSwipeRigidbody2D.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSwipeRigidbody2DNoRelease.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSwipeRigidbody3D.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanSwipeRigidbody3DNoRelease.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanTapSelect.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanTouchEvents.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanTranslate.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Examples\Scripts\LeanTranslateSmooth.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Scripts\LeanFinger.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Scripts\LeanGesture.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Scripts\LeanSelectable.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Scripts\LeanSnapshot.cs" />
+     <Compile Include="Assets\Extensions\LeanTouch\Scripts\LeanTouch.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\DisplayNameAttribute.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\MaxAttribute.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\MinMaxAttribute.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\PostProcessAttribute.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\AmbientOcclusion.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\AutoExposure.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Bloom.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\ChromaticAberration.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\ColorGrading.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\DepthOfField.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Dithering.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\FastApproximateAntialiasing.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Fog.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Grain.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\MotionBlur.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\SubpixelMorphologicalAntialiasing.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\TemporalAntialiasing.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Vignette.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\HistogramMonitor.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\LightMeterMonitor.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\Monitor.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\VectorscopeMonitor.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\WaveformMonitor.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\ParameterOverride.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessBundle.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessDebug.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessEffectRenderer.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessEffectSettings.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessEvent.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessLayer.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessManager.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessMonitors.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessProfile.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessRenderContext.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessResources.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessVolume.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\ColorUtilities.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\HableCurve.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\HaltonSeq.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\LogHistogram.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\MeshUtilities.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\PropertySheet.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\PropertySheetFactory.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\RuntimeUtilities.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\ShaderIDs.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\Spline.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\TargetPool.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\TextureFormatUtilities.cs" />
+     <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\TextureLerper.cs" />
+     <Compile Include="Assets\Extensions\SimpleParticlePack\Scripts\ParticleTester.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_ArrayHelper.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_CachedFind.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_ColourGradient.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_DebrisVariant.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_Handles.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_Helper.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_MatrixHelper.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_Mesh.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_MeshData.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_MeshHelper.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_Message.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_MonoBehaviour.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_MonoBehaviourUnique.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_MultiMesh.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_Packer.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_PackerBin.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_PackerBorder.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_PackerBorderSize.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_PackerInput.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_PackerNode.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_PackerOutput.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_PackerResult.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_PackerTrim.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_RectHelper.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_ShaderHelper.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_ShaderUsage.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_ShadowOccluder.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_Singleton.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_SquareSize.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_StarfieldDistribution.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_StarfieldStarData.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_StarfieldStarVariant.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_SurfaceConfiguration.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_SurfaceHelper.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_SurfaceMultiMesh.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_SurfaceTexture.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_WeightedRandom.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_AsteroidRing.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_AsteroidRing_Messages.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_AsteroidRing_Procedural.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_AsteroidRing_Properties.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_ChaosTransform.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Corona.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Corona_Messages.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Corona_Procedural.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Corona_Properties.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_DebrisSpawner.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Dust.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_GasGiant.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_GasGiant_Messages.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_GasGiant_Properties.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_GravityReceiver.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_GravitySource.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_LightSource.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Nebula.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Planet.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Planet_Messages.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Planet_Properties.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_RenderQueueChanger.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Ring.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Ring_Messages.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Ring_Procedural.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Ring_Properties.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_SimpleOrbit.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Skysphere.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Skysphere_Messages.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Skysphere_Properties.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Star.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Star_Messages.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Star_Properties.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Starfield.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Starfield_Edit.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Starfield_Messages.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Starfield_Procedural.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Starfield_Properties.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_SurfaceDisplacement.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_SurfaceTessellator.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_SurfaceTessellator_Messages.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_SurfaceTessellator_Patch.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_SurfaceTessellator_Procedural.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_SurfaceTessellator_Properties.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_SurfaceTessellatorCollider.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_Thruster.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_ThrusterController.cs" />
+     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_VolumetricProbe.cs" />
+     <Compile Include="Assets\Extensions\TheTopicbirdTools\ScreenshotCreator\ScreenshotCreator.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Archived\TestingPunch.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasicCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2dCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListenersCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSequencer.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUiCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralUISpaceCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\LogoCinematic.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier2d.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineEndlessCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplinePerformanceCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplines.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineTrackCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingAllCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
+     <Compile Include="Assets\Scripts\Accounts\User.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Camera\ShakeCamera.cs" />
+     <Compile Include="Assets\Scripts\Common\Coroutiner.cs" />
+     <Compile Include="Assets\Scripts\Common\DestroyByCollision.cs" />
+     <Compile Include="Assets\Scripts\Common\DestroyByTime.cs" />
+     <Compile Include="Assets\Scripts\Common\Follow.cs" />
+     <Compile Include="Assets\Scripts\Common\GameState.cs" />
+     <Compile Include="Assets\Scripts\Common\MovePosition.cs" />
+     <Compile Include="Assets\Scripts\Common\Rotator2D.cs" />
+     <Compile Include="Assets\Scripts\Common\TextureOffset.cs" />
+     <Compile Include="Assets\Scripts\Common\Visible.cs" />
+     <Compile Include="Assets\Scripts\Common\VisibleByState.cs" />
+     <Compile Include="Assets\Scripts\Decorations\RandomNebula.cs" />
+     <Compile Include="Assets\Scripts\Decorations\RandomStarfield.cs" />
+     <Compile Include="Assets\Scripts\Decorations\RandomStarSystem.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemySpaceship.cs" />
+     <Compile Include="Assets\Scripts\GameDebug\FpsCounter.cs" />
+     <Compile Include="Assets\Scripts\GameDebug\GameStateDebug.cs" />
+     <Compile Include="Assets\Scripts\GradientTest.cs" />
+     <Compile Include="Assets\Scripts\IDamageable.cs" />
+     <Compile Include="Assets\Scripts\IncreaseDecreaseType.cs" />
+     <Compile Include="Assets\Scripts\Managers\EventManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\GeneratorManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
+     <Compile Include="Assets\Scripts\Messaging\IEventAggregator.cs" />
+     <Compile Include="Assets\Scripts\Messaging\IMessage.cs" />
+     <Compile Include="Assets\Scripts\Messaging\MessageBus.cs" />
+     <Compile Include="Assets\Scripts\Messaging\NeonSpaceMessages\GameStateMessage.cs" />
+     <Compile Include="Assets\Scripts\Messaging\NeonSpaceMessages\SyntheseMessage.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\Asteroid.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\Obstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\Phaser.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\Singularity.cs" />
+     <Compile Include="Assets\Scripts\PowerUps\PowerUp.cs" />
+     <Compile Include="Assets\Scripts\Shop\Shop.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\MoveDirectionType.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\Shields\Shield.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\Shields\ShieldConfig.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\Spaceship.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\SpaceshipConfig.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\SpaceshipInput.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\Weapons\Shell.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\Weapons\ShellExplosion.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\Weapons\Weapon.cs" />
+     <Compile Include="Assets\Scripts\Spaceships\Weapons\WeaponConfig.cs" />
+     <Compile Include="Assets\Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\LoadingScreen.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Modals\GameOverModal.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Modals\GamePauseModal.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Modals\RewardModal.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Panels\SettingsPanel.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Widgets\Advertisements\AdvertisementWidget.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Widgets\Advertisements\GameOverAdvertisementWidget.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Widgets\ChangeGameStateWidget.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Widgets\ScoreWidget.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Widgets\ShieldWidget.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Widgets\SyntheseWidget.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Widgets\WeaponWidget.cs" />
+     <Compile Include="Assets\Scripts\UserInterface\Widgets\Widget.cs" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\StarAtmosphere\VariantOuter.shader" />
+     <None Include="Assets\Scripts\ClassDiagram.cd" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantStretchedShadowScattering.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\GasGiant.cginc" />
+     <None Include="Assets\Sprites\SpaceShooterRedux\license.txt" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\FinalPass.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Waveform.compute" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\LeanTouch\Examples\Fonts\OFL.txt" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Uber.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Texture3DLerp.compute" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\PlanetAtmosphere.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormal.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Thruster\Flame.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalSpecularDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmospherePlanetShadowDetail.shader" />
+     <None Include="Assets\Effects\D_FX\Shaders\Particle Multiply Color.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\GasGiant\VariantOuter.shader" />
+     <None Include="Assets\Extensions\Destructible 2D\Shaders\Diffuse.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantPlanetShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Bloom.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\AsteroidRing\VariantShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterSpecularRingShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Fog.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\AsteroidRing\VariantShadowSpin.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Dust.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Corona\VariantCullNear.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\xRLib.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantSpecular.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantStretchedShadowLitScattering.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Starfield\Variant.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Corona\VariantCullNearRing.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\AsteroidRing\VariantSpin.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\API\PSSL.hlsl" />
+     <None Include="Assets\LeanTween\Examples\Archived\2dUnlitWithFade.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\AutoExposure.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\StarSurface\VariantOuter.shader" />
+     <None Include="Assets\Extensions\HeyBlairGames\PlanetTextureGenerator\Editor\PlanetNoiseGenerator.compute" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetClouds\VariantRingShadow.shader" />
+     <None Include="Assets\Audio\Sounds\Robotic\info.txt" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetClouds\VariantPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\StarAtmosphere.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalSpecularPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Vectorscope.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantShadowLit.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Dust\Subtractive.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterSpecularPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalSpecularRingShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmospherePlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormal.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\StarSurface\VariantPerPixel.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Corona\VariantRing.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereSpecularDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Dust\Additive.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\GasGiant\VariantOuterRingShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalSpecularDetail.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DepthOfField.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Nebula\Additive.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantShadowScattering.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DiscardAlpha.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Corona\VariantPerPixel.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalSpecular.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantSpecularDetail.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Lut3DBaker.compute" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\GasGiant\VariantPlanetShadow.shader" />
+     <None Include="Assets\LeanTween\ReadMe.txt" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Dithering.hlsl" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Colors.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereRingShadow.shader" />
+     <None Include="Assets\Extensions\LeanTouch\Examples\Shaders\Skybox.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Ring.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\PlanetSurface.cginc" />
+     <None Include="Assets\Extensions\HeyBlairGames\PlanetTextureGenerator\Runtime\PlanetSpecular.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\Variant.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalSpecularPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\PlanetClouds.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\GasGiant\VariantOuterPlanetShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\API\Vulkan.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Thruster\Flare.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantStretchedLit.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\GrainBaker.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\Destructible 2D\Shaders\Outline.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\ExposureHistogram.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantSpecularPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Editor\Trackball.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantOuterScatteringRingShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\LightMeter.shader" />
+     <None Include="Assets\Extensions\LeanTouch\Examples\Shaders\Smooth.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\GasGiant\Variant.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\API\D3D12.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterSpecular.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\API\OpenGL.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\AsteroidRing\Variant.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantScatteringPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\Destructible 2D\Shaders\Default.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormal.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Fog\Variant.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantLitScattering.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Skysphere\Variant.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantStretchedScattering.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DiskKernels.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereSpecularPlanetShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\AmbientOcclusion.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalSpecularRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\ACES.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantScattering.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantOuterPlanetShadow.shader" />
+     <None Include="Assets\Extensions\LeanLocalization\Examples\English.txt" />
+     <None Include="Assets\Extensions\LeanLocalization\Examples\Spanish.txt" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\StdLib.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereSpecularRingShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\StarSurface\Variant.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DepthOfField.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalSpecularRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalPlanetShadow.shader" />
+     <None Include="Assets\Effects\D_FX\Shaders\Particle AlphaBlend+AddSoft VColor.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\FastApproximateAntialiasing.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalRingShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Fog.hlsl" />
+     <None Include="Assets\Effects\D_FX\Shaders\Particle AlphaBlend+Add.shader" />
+     <None Include="Assets\Extensions\LeanLocalization\Examples\Japanese.txt" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantOuterRingShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\AmbientOcclusion.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalSpecularPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterSpecularDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalRingShadow.shader" />
+     <None Include="Assets\Extensions\Destructible 2D\Shaders\Keep Alpha.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\Variant.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantOuterScattering.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereSpecularRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\MotionBlur.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Corona\VariantPerPixelRing.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Texture2DLerp.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantLit.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DeferredFog.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantOuter.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantScatteringRingShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantStretchedShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Corona\Variant.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantSpecularPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Nebula\Subtractive.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereSpecularPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetClouds\Variant.shader" />
+     <None Include="Assets\Effects\D_FX\Shaders\Particle AlphaBlend+Add VColor.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Starfield.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Corona\VariantCullNearPerPixel.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalSpecularRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Corona\VariantCullNearPerPixelRing.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalRingShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\API\D3D9.hlsl" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Lut2DBaker.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Corona.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalSpecularPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\Variant.shader" />
+     <None Include="Assets\Effects\D_FX\Shaders\Hidden.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\StarAtmosphere\Variant.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\API\Metal.hlsl" />
+     <None Include="Assets\Extensions\HeyBlairGames\PlanetTextureGenerator\Runtime\PlanetParallaxSpecular.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantStretched.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\AsteroidRing.cginc" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Vectorscope.compute" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\TemporalAntialiasing.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantStretchedLitScattering.shader" />
+     <None Include="Assets\LeanTween\License.txt" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalSpecularRingShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantSpecularRingShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Copy.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantShadowLitScattering.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterNormalSpecular.shader" />
+     <None Include="Assets\Sprites\SpaceShooterRedux\Spritesheet\sheet.xml" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterRingShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Include.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantRingShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereSpecular.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereNormalSpecularDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Starfield\VariantMinSize.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantStretchedShadowLit.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Skysphere.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterSpecularPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalSpecularPlanetShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantOuterScatteringPlanetShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\API\D3D11.hlsl" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Editor\ConvertToLog.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Waveform.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantRingShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalSpecularPlanetShadow.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\Ring\VariantScattering.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Thruster.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\GasGiant\VariantRingShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\API\XboxOne.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetAtmosphere\VariantPlanetShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Sampling.hlsl" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalSpecularRingShadow.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Editor\CurveGrid.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\StarSurface\VariantOuterPerPixel.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantNormalSpecular.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Histogram.compute" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuterSpecularRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Histogram.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantSpecularRingShadowDetail.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Nebula.cginc" />
+     <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\ExposureHistogram.compute" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphereOuter.shader" />
+     <None Include="Assets\Extensions\TheTopicbirdTools\ScreenshotCreator\readme.txt" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\StarSurface.cginc" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Thruster\BasicFlame.shader" />
+     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Resources\PlanetSurface\VariantAtmosphere.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/Applications/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/Applications/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/Applications/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/Applications/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>D:/Applications/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/Applications/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>D:/Applications/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>D:/Applications/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements.Editor">
+ <HintPath>D:/Dmitry/Documents/GitHub/SynthwaveProject/Assets/Extensions/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="LiteDB">
+ <HintPath>D:/Dmitry/Documents/GitHub/SynthwaveProject/Assets/Plugins/LiteDB/LiteDB.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{2BD5C0A3-7AFD-51C4-5EEE-90CF6BB8A730}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

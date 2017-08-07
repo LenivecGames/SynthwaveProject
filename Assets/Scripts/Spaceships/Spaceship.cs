@@ -1,16 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-using CoonGames;
-using LiteDB;
 namespace NeonSpace
 {
     [DisallowMultipleComponent, RequireComponent(typeof(SpriteRenderer), typeof(Rigidbody2D), typeof(PolygonCollider2D))]
     public class Spaceship : MonoBehaviour, IDamageable
     {
-        
-        [Prefab]
-        public GameObject Prefab;
 
         public SpaceshipConfig _SpaceshipConfig;
 
@@ -24,6 +19,9 @@ namespace NeonSpace
         private Weapon _Weapon;
         [SerializeField]
         private ParticleSystem _Trail;
+
+        [SerializeField]
+        private ParticleSystem _ExplosionParticles;
 
         [SerializeField]
         private Transform _WeaponMount;
@@ -58,13 +56,7 @@ namespace NeonSpace
 
             ConfigureCore(new SpaceshipConfig(_SpriteRenderer.sprite, new Vector2(6, 2)));
             ConfigureShield(new ShieldConfig(_Shield.SpriteRenderer.sprite, 60));
-
-            
-
-        }
-
-        private void Update()
-        {
+            ConfigureWeapon(new WeaponConfig(2f));
 
         }
 
@@ -79,7 +71,7 @@ namespace NeonSpace
             if (GameManager.CurrentGameState.Equals(GameState.Playing))
             {
                 _Rigidbody.position = new Vector2(_Rigidbody.position.x, Mathf.Clamp(_Rigidbody.position.y, -Camera.main.orthographicSize + _Collider.bounds.size.y/2, Camera.main.orthographicSize - _Collider.bounds.size.y/2));
-
+                    
                 Move(new Vector2(_SpaceshipConfig.Speed.x, _Rigidbody.velocity.y));
             }
         }
@@ -88,10 +80,19 @@ namespace NeonSpace
         {
             if (_Shield.IsDestroyed)
             {
-                EventManager.Publish<GameStateMessage>(new GameStateMessage(GameState.GameOver));
+                Coroutiner.Start(Explode());
             }
             _Shield.DecreaseEnergy(value);
             Handheld.Vibrate();
+        }
+
+        public IEnumerator Explode()
+        {
+            ParticleSystem particles = Instantiate(_ExplosionParticles, transform.position, Quaternion.identity);
+            gameObject.SetActive(false);
+            Destroy(particles, particles.main.duration);
+            yield return new WaitForSeconds(particles.main.duration);
+            EventManager.Publish<GameStateMessage>(new GameStateMessage(GameState.GameOver));
         }
 
         public void AddAmmo(int value)
@@ -102,25 +103,6 @@ namespace NeonSpace
         private void Move(Vector2 speed)
         {
             _Rigidbody.velocity = new Vector2(speed.x,speed.y);
-        }
-
-        public void Move(MoveDirectionType directionType)
-        {
-            switch(directionType)
-            {
-                case MoveDirectionType.Down:
-                    Move(new Vector2(0, -_SpaceshipConfig.Speed.y));
-                    break;
-                case MoveDirectionType.Left:
-                    Move(new Vector2(-_SpaceshipConfig.Speed.x, 0));
-                    break;
-                case MoveDirectionType.Right:
-                    Move(new Vector2(_SpaceshipConfig.Speed.x, 0));
-                    break;
-                case MoveDirectionType.Up:
-                    Move(new Vector2(0, _SpaceshipConfig.Speed.y));
-                    break;
-            }
         }
 
         public void MoveForward()
@@ -170,10 +152,18 @@ namespace NeonSpace
 
         private void OnGameStateHander(GameStateMessage gameStateMessage)
         {
-            if (gameStateMessage.GameState == GameState.Launch)
+            if (gameStateMessage.GameState == GameState.Launch || gameStateMessage.GameState == GameState.Menu)
             {
+                gameObject.SetActive(true);
                 _Shield.IncreaseEnergy(_Shield.MaxEnergy);
                 transform.position = Vector3.zero;
+                transform.rotation = Quaternion.identity;
+            }
+
+            if(gameStateMessage.GameState == GameState.Playing)
+            {
+                transform.Rotate(new Vector3(-10,0,0)); // ...
+                LeanTween.rotateX(gameObject, 10f, 3f).setRecursive(true).setLoopPingPong();
             }
         }
     }

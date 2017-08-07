@@ -9,7 +9,7 @@ namespace NeonSpace
         public readonly float ReloadTime;
         public WeaponConfig(float reloadTime)
         {
-
+            ReloadTime = reloadTime;
         }
     }
 }

@@ -26,7 +26,6 @@ GameObject:
   - component: {fileID: 114431066272920380}
   - component: {fileID: 114671572761695302}
   - component: {fileID: 114948752116246998}
-  - component: {fileID: 114277783423799760}
   - component: {fileID: 114045183324738022}
   m_Layer: 0
   m_Name: Asteroid_1
@@ -284,22 +283,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Time: 5
---- !u!114 &114277783423799760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1668390618614048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: 0
-  eraseRenderer: 0
-  originalLayer: 0
-  originalMaterials:
-  - {fileID: 2100000, guid: 4f935b17ca3c4d84fbcb73997407334c, type: 2}
 --- !u!114 &114345553560360664
 MonoBehaviour:
   m_ObjectHideFlags: 1

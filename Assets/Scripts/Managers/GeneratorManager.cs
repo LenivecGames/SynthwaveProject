@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 using NeonSpace.Obstacles;
 
+using Lean;
+
 namespace NeonSpace
 {
     public class GeneratorManager : MonoBehaviour

@@ -4,12 +4,12 @@ using System.Collections;
 namespace NeonSpace
 {
     [System.Serializable]
-    public class ShieldConfig
+    public class ShieldConfig : Config
     {
-        public Sprite Sprite;
-        public int Energy;
+        public readonly Sprite Sprite;
+        public readonly int Energy;
 
-        public ShieldConfig(Sprite sprite, int energy)
+        public ShieldConfig(string name,int price, Sprite sprite, int energy) : base(name, price)
         {
             Sprite = sprite;
             Energy = Mathf.Abs(energy);

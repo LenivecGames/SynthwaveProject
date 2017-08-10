@@ -35,6 +35,7 @@ namespace NeonSpace
         }
 
         private List<Obstacle> _Obstacles = new List<Obstacle>();
+        private List<PowerUp> _PowerUps = new List<PowerUp>();
 
         private bool _CanGenerateObstacle = false;
 
@@ -59,12 +60,24 @@ namespace NeonSpace
             StartCoroutine(GenerateObstacle());
         }
 
+        private IEnumerator GeneratePowerUp()
+        {
+            yield return new WaitForSeconds(Random.Range(DelayMin, DelayMax));
+            if (PowerUps.Length != 0)
+            {
+                PowerUp powerUp = Instantiate(PowerUps[Random.Range(0, PowerUps.Length)], new Vector2(transform.position.x, Random.Range(MinY, MaxY)), Quaternion.identity);
+                _PowerUps.Add(powerUp);
+            }
+            StartCoroutine(GeneratePowerUp());
+        }
+
         private void OnGameStateHandler(GameStateMessage gameStateMessage)
         {
             if(gameStateMessage.GameState == GameState.Playing)
             {
                 _CanGenerateObstacle = true;
                 StartCoroutine(GenerateObstacle());
+                StartCoroutine(GeneratePowerUp());
             }
             else
             {
@@ -73,14 +86,22 @@ namespace NeonSpace
 
             if(gameStateMessage.GameState == GameState.GameOver)
             {
-                for(int i = 0; i < _Obstacles.Count; i++)
+                foreach(Obstacle obstacle in _Obstacles)
                 {
-                    if(_Obstacles[i] != null)
+                    if(obstacle != null)
                     {
-                        Destroy(_Obstacles[i].gameObject);
+                        Destroy(obstacle.gameObject);
+                    }
+                }
+                foreach (PowerUp powerUp in _PowerUps)
+                {
+                    if (powerUp != null)
+                    {
+                        Destroy(powerUp.gameObject);
                     }
                 }
                 _Obstacles.Clear();
+                _PowerUps.Clear();
                 StopAllCoroutines();
             }
 

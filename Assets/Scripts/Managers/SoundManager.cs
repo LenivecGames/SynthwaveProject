@@ -25,7 +25,7 @@ using System.Collections.Generic;
                     if (_instance == null)
                     {
                         // Create gameObject and add component
-                        _instance = (new GameObject("EazySoundManager")).AddComponent<SoundManager>();
+                        _instance = (new GameObject("SoundManager")).AddComponent<SoundManager>();
                     }
                 }
                 return _instance;

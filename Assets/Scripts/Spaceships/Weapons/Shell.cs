@@ -42,14 +42,13 @@ namespace NeonSpace
 
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            IDamageable damageTaker = collider.attachedRigidbody?.gameObject.GetComponent<IDamageable>();
-            if (damageTaker != null && collider.gameObject.tag == "Obstacle" || collider.gameObject.tag == "Enemy" || collider.gameObject.tag == "Boss")
+            IDamageable damageTaker = collider.attachedRigidbody.gameObject.GetComponent<IDamageable>();
+            if (damageTaker != null && collider.gameObject.tag == "Obstacle" || collider.gameObject.tag == "Enemy")
             {
                 //Instantiate(Explosion, transform.position, Quaternion.identity);
                 Explosion();
                 ParticleSystem particles = Instantiate(ExplosionParticles, transform.position, transform.rotation);
                 Destroy(particles.gameObject, particles.main.duration);
-
                 Destroy(gameObject);
             }
         }
@@ -68,7 +67,6 @@ namespace NeonSpace
                 var stampAngle = StampRandomDirection == true ? Random.Range(-180.0f, 180.0f) : 0.0f;
 
                 D2dDestructible.StampAll(stampPosition, StampSize, stampAngle, StampTexture, StampHardness/*, Mask*/);
-
             if (Raycast == true && RaycastCount > 0)
             {
                 var angleStep = 360.0f / RaycastCount;

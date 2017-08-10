@@ -6,6 +6,7 @@ namespace NeonSpace.UserInterface
 {
     public class ScoreWidget : Widget
     {
+        public bool IsGlobal;
         [SerializeField]
         private Text _ScoreText;
 

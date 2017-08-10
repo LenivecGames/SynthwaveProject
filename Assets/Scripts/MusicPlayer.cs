@@ -30,7 +30,8 @@ namespace NeonSpace
         private IEnumerator PlayMusic()
         {
             AudioClip audioClip = _MusicAudioClips[Random.Range(0, _MusicAudioClips.Length)];
-            SoundManager.PlayMusic(audioClip);
+            int musicId = SoundManager.PlayMusic(audioClip, 1,false,true,0,0);
+            
             yield return new WaitForSeconds(audioClip.length);
             StartCoroutine(PlayMusic());
             

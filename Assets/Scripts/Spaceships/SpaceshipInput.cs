@@ -87,17 +87,20 @@ namespace NeonSpace
                         if (Input.mousePosition.x < Screen.width / 2)
                         {
                             Vector2 pos = _MainCamera.ScreenToWorldPoint(Input.mousePosition);
-                            if (pos.y > transform.position.y + 0.15f)
+                            if (pos.y != transform.position.y)
                             {
-                                _Spaceship.MoveUp();
-                            }
-                            else if (pos.y < transform.position.y + 0.15f)
-                            {
-                                _Spaceship.MoveDown();
-                            }
-                            else
-                            {
-                                _Spaceship.MoveForward();
+                                if (pos.y > transform.position.y + 0.15f)
+                                {
+                                    _Spaceship.MoveUp();
+                                }
+                                else if (pos.y < transform.position.y + 0.15f)
+                                {
+                                    _Spaceship.MoveDown();
+                                }
+                                else
+                                {
+                                    _Spaceship.MoveForward();
+                                }
                             }
                         }
                     }

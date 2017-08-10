@@ -165,7 +165,6 @@ namespace Lean.Localization
 
 				culture.Language = language;
 				culture.Alias    = alias;
-
 				Cultures.Add(culture);
 			}
 

@@ -1,22 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.Collections.Generic;
 namespace NeonSpace
 {
     [DisallowMultipleComponent, RequireComponent(typeof(SpriteRenderer), typeof(Rigidbody2D), typeof(PolygonCollider2D))]
     public class Spaceship : MonoBehaviour, IDamageable
     {
-
-        public SpaceshipConfig _SpaceshipConfig;
+        
+        private SpaceshipConfig _SpaceshipConfig;
 
         private SpriteRenderer _SpriteRenderer;
         private Rigidbody2D _Rigidbody;
         private PolygonCollider2D _Collider;
 
+        public Shield Shield { get { return _Shield; } }
         [SerializeField]
         private Shield _Shield;
+        public Weapon Weapon { get { return _Weapon; } }
         [SerializeField]
         private Weapon _Weapon;
+
         [SerializeField]
         private ParticleSystem _Trail;
 
@@ -30,6 +33,7 @@ namespace NeonSpace
         [SerializeField]
         private Transform[] _TrailMounts;
 
+        private const float _FloatingOriginThreshold = 10000f;
         private void Awake()
         {
             EventManager.Subscribe<GameStateMessage>(OnGameStateHander);
@@ -47,21 +51,25 @@ namespace NeonSpace
             {
                 foreach(Transform mount in _TrailMounts)
                 {
-                    ParticleSystem trail = Instantiate(_Trail);
-                    trail.transform.SetParent(mount);
+                    ParticleSystem trail = Instantiate(_Trail, Vector3.zero,Quaternion.identity, mount);
+                    trail.transform.position = mount.transform.position;
                     trail.gameObject.SetActive(true);
 
                 }
             }
 
-            ConfigureCore(new SpaceshipConfig(_SpriteRenderer.sprite, new Vector2(6, 2)));
-            ConfigureShield(new ShieldConfig(_Shield.SpriteRenderer.sprite, 60));
-            ConfigureWeapon(new WeaponConfig(2f));
+            ConfigureCore(new SpaceshipConfig("Default core",0,_SpriteRenderer.sprite, new Vector2(6, 2)));
+            ConfigureShield(new ShieldConfig("Default shield",0,_Shield.SpriteRenderer.sprite, 60));
+            ConfigureWeapon(new WeaponConfig("Default weapon",0,2f, 0));
 
         }
 
         private void FixedUpdate()
         {
+            if(transform.position.x > _FloatingOriginThreshold)
+            {
+                _Rigidbody.transform.position = new Vector2(0, _Rigidbody.position.y);
+            }
 
             if(GameManager.CurrentGameState.Equals(GameState.Launch))
             {

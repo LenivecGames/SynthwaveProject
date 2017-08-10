@@ -10,7 +10,7 @@ public class D_FX_HaltParticle : MonoBehaviour {
 		systems = GetComponentsInChildren<ParticleSystem>();
 		
 		foreach(ParticleSystem ps in systems)
-			ps.enableEmission = false;
+			//ps.emission.enabled = false;
 		
 		StartCoroutine("WaitFrame");
 	}
@@ -21,7 +21,7 @@ public class D_FX_HaltParticle : MonoBehaviour {
 		
 		foreach(ParticleSystem ps in systems)
 		{
-			ps.enableEmission = true;
+			//ps.enableEmission = true;
 			ps.Play(true);
 		}
 	}

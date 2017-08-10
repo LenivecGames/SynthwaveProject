@@ -20,9 +20,10 @@ namespace NeonSpace
 
         public AudioClip ShootSound;
 
-        private WeaponConfig _Config;
+        public WeaponConfig _Config { get; private set; }
 
-        private float _ReloadTime;
+        //private float _ReloadTime;
+        public bool CanShoot{ get { return _CanShoot; } }
         private bool _CanShoot = true;
 
         private void OnEnable()
@@ -36,6 +37,21 @@ namespace NeonSpace
             Ammo = 30;
         }
 
+        /*protected virtual void BeginShoot()
+        {
+
+        }
+
+        protected virtual void CountinueShoot()
+        {
+
+        }
+
+        protected virtual void EndShoot()
+        {
+
+        }*/
+
         public void Shoot(int pressureTime)
         {
             if (_CanShoot && Ammo > 0)
@@ -46,7 +62,7 @@ namespace NeonSpace
                 Ammo--;
                 _CanShoot = false;
 
-                StartCoroutine(Reload());
+                Coroutiner.Start(Reload());
 
                 OnAmmoChangedEvent?.Invoke();
             }
@@ -61,12 +77,12 @@ namespace NeonSpace
         public void Configure(WeaponConfig config)
         {
             _Config = config;
-            _ReloadTime = config.ReloadTime;
+            //_ReloadTime = config.ReloadTime;
         }
 
         private IEnumerator Reload()
         {
-            yield return new WaitForSeconds(_ReloadTime);
+            yield return new WaitForSeconds(_Config.ReloadTime);
             _CanShoot = true;
         }
 

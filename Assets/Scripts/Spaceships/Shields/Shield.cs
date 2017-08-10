@@ -18,9 +18,9 @@ namespace NeonSpace
         public bool IsDestroyed { get { return CurrentEnergy <= 0; } }
 
         private bool _Indestructible = false;
-        private float _DamageCooldown = 0.2f;
-
-        private Gradient DamageGradient;
+        private float _DamageCooldown = 0.5f;
+        private int EnergyPercent { get { return Mathf.RoundToInt(((float)CurrentEnergy/(float)MaxEnergy)*100); } }
+        //private Gradient DamageGradient;
 
         // Use this for initialization
         void Start()
@@ -31,23 +31,14 @@ namespace NeonSpace
         private void OnCollisionEnter2D(Collision2D collision)
         {
             Rigidbody2D obstacleRigidbody = collision.collider.attachedRigidbody;
-            /*foreach (ContactPoint2D contactPoint in collision.contacts)
-            {
-                ParticleSystem particles = Instantiate(CollisionParticles, contactPoint.point, transform.rotation);
-                obstacleRigidbody.AddForce(new Vector2(obstacleRigidbody.transform.position.y * collision.relativeVelocity.x, obstacleRigidbody.transform.position.y * collision.relativeVelocity.x), ForceMode2D.Force);
-                obstacleRigidbody.inertia = 0.2f;
-                Destroy(particles, particles.main.duration);
-            }*/
 
-            {
-                ContactPoint2D contactPoint = collision.contacts[0];
-                ParticleSystem particles = Instantiate(CollisionParticles, contactPoint.point, Quaternion.identity);
-                obstacleRigidbody.AddForce(new Vector2(obstacleRigidbody.transform.position.y * collision.relativeVelocity.x, obstacleRigidbody.transform.position.y * collision.relativeVelocity.x), ForceMode2D.Force);
-                obstacleRigidbody.inertia = 0.2f;
+            ContactPoint2D contactPoint = collision.contacts[0];
+            ParticleSystem particles = Instantiate(CollisionParticles, contactPoint.point, Quaternion.identity);
+            obstacleRigidbody.AddForce(new Vector2(obstacleRigidbody.transform.position.y * collision.relativeVelocity.x, obstacleRigidbody.transform.position.y * collision.relativeVelocity.x), ForceMode2D.Force);
+            obstacleRigidbody.inertia = 0.2f;
 
-                particles.gameObject.transform.SetParent(transform);
-                Destroy(particles.gameObject, particles.main.duration);
-            }
+            particles.gameObject.transform.SetParent(transform);
+            Destroy(particles.gameObject, particles.main.duration);
         }
 
         public void Configure(ShieldConfig config)
@@ -70,7 +61,6 @@ namespace NeonSpace
                 CurrentEnergy = MaxEnergy;
             }
             OnChangeEnergyEvent?.Invoke();
-            Debug.Log("Current enrgy: " + CurrentEnergy);
             return;
         }
         public void DecreaseEnergy(int value)
@@ -79,6 +69,8 @@ namespace NeonSpace
             {
                 int valueToDecrease = Mathf.Abs(value);
                 CurrentEnergy -= valueToDecrease;
+                LeanTween.alpha(gameObject, 0.6f, 0.04f).setLoopPingPong(Random.Range(2,8));
+                //LeanTween.alpha(gameObject, 1, 1);
                 if (CurrentEnergy <= 0)
                 {
                     CurrentEnergy = 0;
@@ -86,7 +78,7 @@ namespace NeonSpace
                 }
                 else
                 {
-                    StartCoroutine(Cooldown());
+                    Coroutiner.Start(Cooldown());
                 }
                 OnChangeEnergyEvent?.Invoke();
             }

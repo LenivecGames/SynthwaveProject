@@ -227,7 +227,8 @@ public partial class SGT_GasGiant
 		
 		get
 		{
-			return atmosphereLightingColour;
+            if (atmosphereLightingColour == null) atmosphereLightingColour = new SGT_ColourGradient(false, true);
+            return atmosphereLightingColour;
 		}
 	}
 	

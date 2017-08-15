@@ -34,7 +34,7 @@ namespace NeonSpace
 
             ContactPoint2D contactPoint = collision.contacts[0];
             ParticleSystem particles = Instantiate(CollisionParticles, contactPoint.point, Quaternion.identity);
-            obstacleRigidbody.AddForce(new Vector2(obstacleRigidbody.transform.position.y * collision.relativeVelocity.x, obstacleRigidbody.transform.position.y * collision.relativeVelocity.x), ForceMode2D.Force);
+            obstacleRigidbody.AddForce(new Vector2(obstacleRigidbody.transform.position.y * collision.relativeVelocity.x, obstacleRigidbody.transform.position.y * collision.relativeVelocity.x), ForceMode2D.Impulse);
             obstacleRigidbody.inertia = 0.2f;
 
             particles.gameObject.transform.SetParent(transform);
@@ -53,7 +53,12 @@ namespace NeonSpace
         public void IncreaseEnergy(int value)
         {
             int valueToIncrease = Mathf.Abs(value);
-            gameObject.SetActive(true);
+            if (!gameObject.activeInHierarchy)
+            {
+                gameObject.SetActive(true);
+                LeanTween.alpha(gameObject, 0, 0);
+                LeanTween.alpha(gameObject, 1, 1);
+            }
 
             CurrentEnergy += value;
             if (CurrentEnergy > MaxEnergy)

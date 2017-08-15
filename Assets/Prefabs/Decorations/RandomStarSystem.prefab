@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1235268666404510}
+  m_IsPrefabParent: 1
+--- !u!1 &1235268666404510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4170946574184004}
+  - component: {fileID: 114198590125918156}
+  - component: {fileID: 114663634411259710}
+  m_Layer: 0
+  m_Name: RandomStarSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4170946574184004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1235268666404510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30, y: 0, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114198590125918156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1235268666404510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13202f68cfd4dd34daba2bea55da4893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceMesh: {fileID: 4300000, guid: d6e346b270192b74d9f3ba4e524a603d, type: 2}
+  atmosphereMesh: {fileID: 4300000, guid: 14fb9845a0d7ac142963759dc9f889a9, type: 2}
+  starTextures:
+  - {fileID: 2800000, guid: b9df9f191eb38464daeb776c68ddf25e, type: 3}
+  - {fileID: 2800000, guid: 903fc006baf7ee741801142baf1e347f, type: 3}
+  - {fileID: 2800000, guid: 344ef3dc63d39604fb2e05439d85a831, type: 3}
+  coronaTextures:
+  - {fileID: 2800000, guid: ce62a0fee3a87f842b195c84d0971c1d, type: 3}
+  - {fileID: 2800000, guid: d54beee35fc15c345951b1fb0ef72c9d, type: 3}
+  - {fileID: 2800000, guid: 327b2f31526b45a48906c7d66b0d3e92, type: 3}
+  - {fileID: 2800000, guid: d444f411bfcc2cd4fb91addeb1fb6bf5, type: 3}
+  planetTextures:
+  - {fileID: 2800000, guid: 85f77cf2417d9bb4cbe53f59f2e1e6f2, type: 3}
+  - {fileID: 2800000, guid: f700d600b02d49647ae7fef92073fcd2, type: 3}
+  - {fileID: 2800000, guid: e394a978302ed55459cc575f0640f1a9, type: 3}
+  - {fileID: 2800000, guid: 637cac3f23096f242ac31768813aebe4, type: 3}
+  - {fileID: 2800000, guid: 3ed093709b67edd49aa57e6eea53737c, type: 3}
+  - {fileID: 2800000, guid: 6e14be41e7493814aaf5cd44de6171b0, type: 3}
+  gasGiantTextures:
+  - {fileID: 2800000, guid: c1adaea0a00fe6c4ebe9ea463862748b, type: 3}
+  - {fileID: 2800000, guid: 7a68982f08192e945a825bb080e41601, type: 3}
+  - {fileID: 2800000, guid: 976c65a42d7d5db43b53dd263768b492, type: 3}
+  - {fileID: 2800000, guid: 08130b8ae2d70264a9d419e23d8460fd, type: 3}
+  - {fileID: 2800000, guid: 804cf5b50a8bcac419523d60fe828c3a, type: 3}
+  stuffInSystem: []
+--- !u!114 &114663634411259710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1235268666404510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6130f66e46903459f7f3b9321a7cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: {x: -0.06, y: 0, z: 0}

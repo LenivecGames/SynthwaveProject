@@ -40,19 +40,11 @@ namespace NeonSpace
 
         private void OnGameStateHandler(GameStateMessage gameStateMessage)
         {
-
-        }
-
-        private IEnumerator ZoomInCamera()
-        {
-
-            yield return null;
-        }
-
-        private IEnumerator ZoomOutCamera()
-        {
-
-            yield return null;
+            if(GameManager.CurrentGameState == GameState.Launch)
+            {
+                _Camera.orthographicSize = 2;
+                transform.localPosition = new Vector2(0, 0);
+            }
         }
     }
 }

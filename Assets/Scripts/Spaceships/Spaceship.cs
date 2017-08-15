@@ -6,7 +6,8 @@ namespace NeonSpace
     [DisallowMultipleComponent, RequireComponent(typeof(SpriteRenderer), typeof(Rigidbody2D), typeof(PolygonCollider2D))]
     public class Spaceship : MonoBehaviour, IDamageable
     {
-        
+        public SpaceshipConfig SpaceshipConfig { get { return _SpaceshipConfig; } }
+        [SerializeField]
         private SpaceshipConfig _SpaceshipConfig;
 
         private SpriteRenderer _SpriteRenderer;
@@ -91,7 +92,6 @@ namespace NeonSpace
                 Coroutiner.Start(Explode());
             }
             _Shield.DecreaseEnergy(value);
-            Handheld.Vibrate();
         }
 
         public IEnumerator Explode()
@@ -100,7 +100,7 @@ namespace NeonSpace
             gameObject.SetActive(false);
             Destroy(particles, particles.main.duration);
             yield return new WaitForSeconds(particles.main.duration);
-            EventManager.Publish<GameStateMessage>(new GameStateMessage(GameState.GameOver));
+            EventManager.Publish(new GameStateMessage(GameState.GameOver));
         }
 
         public void AddAmmo(int value)
@@ -168,9 +168,9 @@ namespace NeonSpace
                 transform.rotation = Quaternion.identity;
             }
 
-            if(gameStateMessage.GameState == GameState.Playing)
+            if(gameStateMessage.GameState == GameState.Launch)
             {
-                transform.Rotate(new Vector3(-10,0,0)); // ...
+                transform.localRotation = Quaternion.Euler(-10,0,0); // ...
                 LeanTween.rotateX(gameObject, 10f, 3f).setRecursive(true).setLoopPingPong();
             }
         }

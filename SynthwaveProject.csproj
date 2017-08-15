@@ -12,15 +12,12 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2017.1.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>6</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -217,57 +214,6 @@
     <Compile Include="Assets\Extensions\LeanTouch\Scripts\LeanSelectable.cs" />
     <Compile Include="Assets\Extensions\LeanTouch\Scripts\LeanSnapshot.cs" />
     <Compile Include="Assets\Extensions\LeanTouch\Scripts\LeanTouch.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\DisplayNameAttribute.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\MaxAttribute.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\MinMaxAttribute.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\PostProcessAttribute.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\AmbientOcclusion.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\AutoExposure.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Bloom.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\ChromaticAberration.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\ColorGrading.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\DepthOfField.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Dithering.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\FastApproximateAntialiasing.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Fog.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Grain.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\MotionBlur.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\SubpixelMorphologicalAntialiasing.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\TemporalAntialiasing.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Effects\Vignette.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\HistogramMonitor.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\LightMeterMonitor.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\Monitor.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\VectorscopeMonitor.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Monitors\WaveformMonitor.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\ParameterOverride.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessBundle.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessDebug.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessEffectRenderer.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessEffectSettings.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessEvent.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessLayer.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessManager.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessMonitors.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessProfile.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessRenderContext.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessResources.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\PostProcessVolume.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\ColorUtilities.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\HableCurve.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\HaltonSeq.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\LogHistogram.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\MeshUtilities.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\PropertySheet.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\PropertySheetFactory.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\RuntimeUtilities.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\ShaderIDs.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\Spline.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\TargetPool.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\TextureFormatUtilities.cs" />
-    <Compile Include="Assets\Extensions\PostProcessing\Runtime\Utils\TextureLerper.cs" />
     <Compile Include="Assets\Extensions\SimpleParticlePack\Scripts\ParticleTester.cs" />
     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_ArrayHelper.cs" />
     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Library\SGT_CachedFind.cs" />
@@ -355,6 +301,8 @@
     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_ThrusterController.cs" />
     <Compile Include="Assets\Extensions\SpaceToolkit\Scripts\Player\SGT_VolumetricProbe.cs" />
     <Compile Include="Assets\Extensions\TheTopicbirdTools\ScreenshotCreator\ScreenshotCreator.cs" />
+    <Compile Include="Assets\GeometryFXParticles\Scripts\AssetsViewer.cs" />
+    <Compile Include="Assets\GeometryFXParticles\Scripts\CameraRotate.cs" />
     <Compile Include="Assets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
     <Compile Include="Assets\LeanTween\Examples\Archived\TestingPunch.cs" />
     <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
@@ -393,7 +341,7 @@
     <Compile Include="Assets\Scripts\Common\VisibleByState.cs" />
     <Compile Include="Assets\Scripts\Decorations\RandomNebula.cs" />
     <Compile Include="Assets\Scripts\Decorations\RandomStarfield.cs" />
-    <Compile Include="Assets\Scripts\Decorations\RandomStarSystem.cs" />
+    <Compile Include="Assets\Scripts\Decorations\StarSystem\RandomStarSystem.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemySpaceship.cs" />
     <Compile Include="Assets\Scripts\GameDebug\FpsCounter.cs" />
@@ -444,12 +392,42 @@
     <Compile Include="Assets\Scripts\UserInterface\Widgets\Advertisements\AdvertisementWidget.cs" />
     <Compile Include="Assets\Scripts\UserInterface\Widgets\Advertisements\GameOverAdvertisementWidget.cs" />
     <Compile Include="Assets\Scripts\UserInterface\Widgets\ChangeGameStateWidget.cs" />
+    <Compile Include="Assets\Scripts\UserInterface\Widgets\Missions\MissionItem.cs" />
+    <Compile Include="Assets\Scripts\UserInterface\Widgets\Missions\MissionsWidget.cs" />
     <Compile Include="Assets\Scripts\UserInterface\Widgets\ScoreWidget.cs" />
-    <Compile Include="Assets\Scripts\UserInterface\Widgets\ShieldWidget.cs" />
-    <Compile Include="Assets\Scripts\UserInterface\Widgets\SyntheseWidget.cs" />
+    <Compile Include="Assets\Scripts\UserInterface\Widgets\Spaceship\ShieldWidget.cs" />
+    <Compile Include="Assets\Scripts\UserInterface\Widgets\Spaceship\SpaceshipBody.cs" />
+    <Compile Include="Assets\Scripts\UserInterface\Widgets\Spaceship\SyntheseWidget.cs" />
+    <Compile Include="Assets\Scripts\UserInterface\Widgets\Spaceship\WeaponWidget.cs" />
     <Compile Include="Assets\Scripts\UserInterface\Widgets\TutorialWidget.cs" />
-    <Compile Include="Assets\Scripts\UserInterface\Widgets\WeaponWidget.cs" />
     <Compile Include="Assets\Scripts\UserInterface\Widgets\Widget.cs" />
+    <Compile Include="Assets\Services\Analytics\StandardEvents\AnalyticsEvent.cs" />
+    <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AcquisitionSource.cs" />
+    <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AcquisitionType.cs" />
+    <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AdvertisingNetwork.cs" />
+    <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AuthorizationNetwork.cs" />
+    <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\ScreenName.cs" />
+    <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\ShareType.cs" />
+    <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\SocialNetwork.cs" />
+    <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\StoreType.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\AnalyticsEventTracker.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\AnalyticsEventTrackerSettings.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Payload\AnalyticsEventParam.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Payload\StandardEvents\CustomEventPayload.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Payload\StandardEvents\StandardEventPayload.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\TrackableProperty\TrackableField.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\TrackableProperty\TrackableProperty.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\TrackableProperty\ValueProperty.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Attributes\ExposedToAnalyticsAttribute.cs.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Enums\TriggerBool.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Enums\TriggerLifecycleEvent.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Enums\TriggerOperator.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Enums\TriggerType.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Trigger\EventTrigger.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Trigger\TrackableTrigger.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Trigger\TriggerMethod.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Trigger\TriggerRule.cs" />
+    <Compile Include="Assets\Services\Analytics\Tracker\Utils\TypeExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Audio\Sounds\Robotic\info.txt" />
@@ -471,55 +449,6 @@
     <None Include="Assets\Extensions\LeanTouch\Examples\Fonts\OFL.txt" />
     <None Include="Assets\Extensions\LeanTouch\Examples\Shaders\Skybox.shader" />
     <None Include="Assets\Extensions\LeanTouch\Examples\Shaders\Smooth.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\ACES.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\API\D3D11.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\API\D3D12.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\API\D3D9.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\API\Metal.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\API\OpenGL.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\API\PSSL.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\API\Vulkan.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\API\XboxOne.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\AmbientOcclusion.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\AmbientOcclusion.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\AutoExposure.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Bloom.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Copy.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DeferredFog.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DepthOfField.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DepthOfField.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DiscardAlpha.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\DiskKernels.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Dithering.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\ExposureHistogram.compute" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\ExposureHistogram.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\FastApproximateAntialiasing.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\FinalPass.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Fog.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\GrainBaker.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Lut2DBaker.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Lut3DBaker.compute" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\MotionBlur.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\TemporalAntialiasing.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Texture2DLerp.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Texture3DLerp.compute" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Builtins\Uber.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Colors.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Histogram.compute" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Histogram.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\LightMeter.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Vectorscope.compute" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Vectorscope.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Waveform.compute" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Debug\Waveform.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Editor\ConvertToLog.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Editor\CurveGrid.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Editor\Trackball.shader" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\Sampling.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\StdLib.hlsl" />
-    <None Include="Assets\Extensions\PostProcessing\Shaders\xRLib.hlsl" />
     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\AsteroidRing.cginc" />
     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Corona.cginc" />
     <None Include="Assets\Extensions\SpaceToolkit\Shaders\CGInclude\Dust.cginc" />
@@ -675,10 +604,14 @@
     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Thruster\Flame.shader" />
     <None Include="Assets\Extensions\SpaceToolkit\Shaders\Thruster\Flare.shader" />
     <None Include="Assets\Extensions\TheTopicbirdTools\ScreenshotCreator\readme.txt" />
+    <None Include="Assets\GeometryFXParticles\Scripts\ParticleAlphaBlendStroke.shader" />
+    <None Include="Assets\GeometryFXParticles\Scripts\ParticleSimpleAlphaBlend.shader" />
     <None Include="Assets\LeanTween\Examples\Archived\2dUnlitWithFade.shader" />
     <None Include="Assets\LeanTween\License.txt" />
     <None Include="Assets\LeanTween\ReadMe.txt" />
     <None Include="Assets\Scripts\ClassDiagram.cd" />
+    <None Include="Assets\Services\Analytics\StandardEvents\README.txt" />
+    <None Include="Assets\Services\Analytics\Tracker\README.txt" />
     <None Include="Assets\Sprites\SpaceShooterRedux\Spritesheet\sheet.xml" />
     <None Include="Assets\Sprites\SpaceShooterRedux\license.txt" />
   </ItemGroup>

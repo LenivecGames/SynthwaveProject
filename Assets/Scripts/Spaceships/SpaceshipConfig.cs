@@ -12,14 +12,20 @@ namespace NeonSpace
         public Vector2 Speed { get { return _Speed; } }
         [SerializeField]
         private Vector2 _Speed;
-        
+
+
+
+        [SerializeField]
+        private Vector2 _WeaponMount;
+        [SerializeField]
+        private Vector2 _ShieldMount;
+        [SerializeField]
+        private Vector2[] _TrailMounts;
 
         public SpaceshipConfig(string name,int price, Sprite sprite, Vector2 speed) : base(name, price)
         {
-            if(sprite == null || speed == null)
-            {
-                throw new System.ArgumentNullException();
-            }
+            if(sprite == null || speed == null) throw new System.ArgumentNullException();
+
             _Sprite = sprite;
             _Speed = speed;
         }

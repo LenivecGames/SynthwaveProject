@@ -13,11 +13,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpaceshipConfigs:
   - _Name: Default spaceship
+    _Unlocked: 0
+    _Price: 0
     _Sprite: {fileID: 21300000, guid: 2def3932d6f4b9d4bb62eb110c1507bb, type: 3}
+    _Speed: {x: 4, y: 4}
+  - _Name: Body 2
+    _Unlocked: 0
+    _Price: 0
+    _Sprite: {fileID: 21300000, guid: 9f2696b2ca86f7248b7ed6e223a9b4b3, type: 3}
+    _Speed: {x: 4, y: 4}
+  - _Name: Body 3
+    _Unlocked: 0
+    _Price: 0
+    _Sprite: {fileID: 21300000, guid: fe4adaedab25b494388c79731b2e1266, type: 3}
+    _Speed: {x: 4, y: 4}
+  - _Name: Body 4
+    _Unlocked: 0
+    _Price: 0
+    _Sprite: {fileID: 21300000, guid: 5f09676a53bfff4439f47a79b031b629, type: 3}
+    _Speed: {x: 4, y: 4}
+  - _Name: Body 5
+    _Unlocked: 0
+    _Price: 0
+    _Sprite: {fileID: 21300000, guid: 03d119d29b74f824892514899ba6d771, type: 3}
     _Speed: {x: 4, y: 4}
   ShieldConfigs:
   - _Name: Default shield
-    Sprite: {fileID: 21300000, guid: c728e4ee5dba87540ae0e234929531cf, type: 3}
-    Energy: 60
+    _Unlocked: 0
+    _Price: 0
   WeaponConfigs:
   - _Name: Default weapon
+    _Unlocked: 0
+    _Price: 0

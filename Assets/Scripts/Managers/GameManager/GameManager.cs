@@ -5,6 +5,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 using NeonSpace.Accounts;
 using System.Globalization;
+using Lean.Localization;
+
 namespace NeonSpace
 {
     [DisallowMultipleComponent]
@@ -44,20 +46,8 @@ namespace NeonSpace
         {
             EventManager.Publish(new GameStateMessage(GameState.Menu));
 
-            if(string.IsNullOrEmpty(_User.Language))
-            {
-                if (Lean.Localization.LeanLocalization.CurrentLanguages.Exists(delegate (string value) { return value == CultureInfo.CurrentCulture.Parent.EnglishName; }))
-                {
-                    Lean.Localization.LeanLocalization.CurrentLanguage = CultureInfo.CurrentCulture.Parent.EnglishName;
-                    _User.Language = Lean.Localization.LeanLocalization.CurrentLanguage;
-                }
-                else
-                {
-                    Lean.Localization.LeanLocalization.CurrentLanguage = "English";
-                    _User.Language = "English";
-                }
-            }
-            AudioListener.volume = _User.VolumeMuted ? 0 : _User.Volume;
+            InitialSettings();
+
             SaveData();
         }
 
@@ -123,6 +113,33 @@ namespace NeonSpace
                 }
 #endif
             }
+        }
+
+        private void InitialSettings()
+        {
+            //Language
+            if (string.IsNullOrEmpty(_User.Language))
+            {
+                for (int i = 0; i < LeanLocalization.CurrentLanguages.Count; i++)
+                {
+                    if(LeanLocalization.CurrentLanguages[i] == CultureInfo.CurrentCulture.Parent.EnglishName)
+                    {
+                        LeanLocalization.CurrentLanguage = CultureInfo.CurrentCulture.Parent.EnglishName;
+                        _User.Language = LeanLocalization.CurrentLanguage;
+                    }
+                }
+                if(string.IsNullOrEmpty(_User.Language))
+                {
+                    LeanLocalization.CurrentLanguage = "English";
+                    _User.Language = "English";
+                }
+            }
+            else
+            {
+                LeanLocalization.CurrentLanguage = User.Language;
+            }
+            //Sound
+            AudioListener.volume = _User.VolumeMuted ? 0 : _User.Volume;
         }
 
         private void OnApplicationFocus(bool focus)

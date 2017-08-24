@@ -8,11 +8,13 @@ namespace NeonSpace
     public class SpaceshipInput : MonoBehaviour
     {
         private Spaceship _Spaceship;
+        private Camera _MainCamera;
         // Use this for initialization
         void Start()
         {
             _Spaceship = GetComponent<Spaceship>();
-            
+            _MainCamera = Camera.main;
+
         }
 
         private void Update()
@@ -35,6 +37,7 @@ namespace NeonSpace
                     }
                 }
             }
+
         }
 
         private void FixedUpdate()
@@ -59,15 +62,49 @@ namespace NeonSpace
                 {
                     foreach (Touch touch in Input.touches)
                     {
-                        if (touch.position.x < Screen.width / 2 && touch.position.y > Screen.height / 2)
+                        if (touch.position.x < Screen.width / 2)
                         {
-                            _Spaceship.MoveUp();
-                        }
-                        else if (touch.position.x < Screen.width / 2 && touch.position.y < Screen.height / 2)
-                        {
-                            _Spaceship.MoveDown();
+                            Vector2 touchInWorld = _MainCamera.ScreenToWorldPoint(touch.position);
+                            if (touchInWorld.y > transform.position.y)
+                            {
+                                _Spaceship.MoveUp();
+                            }
+                            else if (touchInWorld.y < transform.position.y)
+                            {
+                                _Spaceship.MoveDown();
+                            }
+                            else
+                            {
+                                _Spaceship.MoveForward();
+                            }
                         }
                     }
+                }
+                else if (SystemInfo.deviceType == DeviceType.Desktop)
+                {
+                    if (Input.GetMouseButton(0))
+                    {
+                        if (Input.mousePosition.x < Screen.width / 2)
+                        {
+                            Vector2 pos = _MainCamera.ScreenToWorldPoint(Input.mousePosition);
+                            if (pos.y != transform.position.y)
+                            {
+                                if (pos.y > transform.position.y + 0.15f)
+                                {
+                                    _Spaceship.MoveUp();
+                                }
+                                else if (pos.y < transform.position.y + 0.15f)
+                                {
+                                    _Spaceship.MoveDown();
+                                }
+                                else
+                                {
+                                    _Spaceship.MoveForward();
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
         }

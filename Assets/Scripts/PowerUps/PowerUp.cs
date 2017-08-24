@@ -1,18 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class PowerUp : MonoBehaviour
+namespace NeonSpace
 {
-
-    // Use this for initialization
-    void Start()
+    public abstract class PowerUp : MonoBehaviour
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        protected abstract void Use(Spaceship spaceship);
     }
 }

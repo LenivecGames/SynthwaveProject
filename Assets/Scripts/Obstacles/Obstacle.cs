@@ -27,7 +27,7 @@ namespace NeonSpace.Obstacles
 
         protected virtual void OnCollisionEnter2D(Collision2D collision)
         {
-            IDamageable damageTaker = collision.gameObject.GetComponent<IDamageable>();
+            IDamageable damageTaker = collision.collider.attachedRigidbody.gameObject.GetComponent<IDamageable>();
             if(damageTaker != null)
             {
                 float thisForce = _Rigidbody.mass * _Rigidbody.velocity.magnitude;

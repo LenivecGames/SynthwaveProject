@@ -1,29 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-using CoonGames;
-using LiteDB;
+using System.Collections.Generic;
 namespace NeonSpace
 {
     [DisallowMultipleComponent, RequireComponent(typeof(SpriteRenderer), typeof(Rigidbody2D), typeof(PolygonCollider2D))]
     public class Spaceship : MonoBehaviour, IDamageable
     {
         
-        [Prefab]
-        public GameObject Prefab;
-
-        public SpaceshipConfig _SpaceshipConfig;
+        private SpaceshipConfig _SpaceshipConfig;
 
         private SpriteRenderer _SpriteRenderer;
         private Rigidbody2D _Rigidbody;
         private PolygonCollider2D _Collider;
 
+        public Shield Shield { get { return _Shield; } }
         [SerializeField]
         private Shield _Shield;
+        public Weapon Weapon { get { return _Weapon; } }
         [SerializeField]
         private Weapon _Weapon;
+
         [SerializeField]
         private ParticleSystem _Trail;
+
+        [SerializeField]
+        private ParticleSystem _ExplosionParticles;
 
         [SerializeField]
         private Transform _WeaponMount;
@@ -32,6 +33,7 @@ namespace NeonSpace
         [SerializeField]
         private Transform[] _TrailMounts;
 
+        private const float _FloatingOriginThreshold = 10000f;
         private void Awake()
         {
             EventManager.Subscribe<GameStateMessage>(OnGameStateHander);
@@ -49,27 +51,25 @@ namespace NeonSpace
             {
                 foreach(Transform mount in _TrailMounts)
                 {
-                    ParticleSystem trail = Instantiate(_Trail);
-                    trail.transform.SetParent(mount);
+                    ParticleSystem trail = Instantiate(_Trail, Vector3.zero,Quaternion.identity, mount);
+                    trail.transform.position = mount.transform.position;
                     trail.gameObject.SetActive(true);
 
                 }
             }
 
-            ConfigureCore(new SpaceshipConfig(_SpriteRenderer.sprite, new Vector2(6, 2)));
-            ConfigureShield(new ShieldConfig(_Shield.SpriteRenderer.sprite, 60));
-
-            
-
-        }
-
-        private void Update()
-        {
+            ConfigureCore(new SpaceshipConfig("Default core",0,_SpriteRenderer.sprite, new Vector2(6, 2)));
+            ConfigureShield(new ShieldConfig("Default shield",0,_Shield.SpriteRenderer.sprite, 60));
+            ConfigureWeapon(new WeaponConfig("Default weapon",0,2f, 0));
 
         }
 
         private void FixedUpdate()
         {
+            if(transform.position.x > _FloatingOriginThreshold)
+            {
+                _Rigidbody.transform.position = new Vector2(0, _Rigidbody.position.y);
+            }
 
             if(GameManager.CurrentGameState.Equals(GameState.Launch))
             {
@@ -79,7 +79,7 @@ namespace NeonSpace
             if (GameManager.CurrentGameState.Equals(GameState.Playing))
             {
                 _Rigidbody.position = new Vector2(_Rigidbody.position.x, Mathf.Clamp(_Rigidbody.position.y, -Camera.main.orthographicSize + _Collider.bounds.size.y/2, Camera.main.orthographicSize - _Collider.bounds.size.y/2));
-
+                    
                 Move(new Vector2(_SpaceshipConfig.Speed.x, _Rigidbody.velocity.y));
             }
         }
@@ -88,10 +88,19 @@ namespace NeonSpace
         {
             if (_Shield.IsDestroyed)
             {
-                EventManager.Publish<GameStateMessage>(new GameStateMessage(GameState.GameOver));
+                Coroutiner.Start(Explode());
             }
             _Shield.DecreaseEnergy(value);
             Handheld.Vibrate();
+        }
+
+        public IEnumerator Explode()
+        {
+            ParticleSystem particles = Instantiate(_ExplosionParticles, transform.position, Quaternion.identity);
+            gameObject.SetActive(false);
+            Destroy(particles, particles.main.duration);
+            yield return new WaitForSeconds(particles.main.duration);
+            EventManager.Publish<GameStateMessage>(new GameStateMessage(GameState.GameOver));
         }
 
         public void AddAmmo(int value)
@@ -102,25 +111,6 @@ namespace NeonSpace
         private void Move(Vector2 speed)
         {
             _Rigidbody.velocity = new Vector2(speed.x,speed.y);
-        }
-
-        public void Move(MoveDirectionType directionType)
-        {
-            switch(directionType)
-            {
-                case MoveDirectionType.Down:
-                    Move(new Vector2(0, -_SpaceshipConfig.Speed.y));
-                    break;
-                case MoveDirectionType.Left:
-                    Move(new Vector2(-_SpaceshipConfig.Speed.x, 0));
-                    break;
-                case MoveDirectionType.Right:
-                    Move(new Vector2(_SpaceshipConfig.Speed.x, 0));
-                    break;
-                case MoveDirectionType.Up:
-                    Move(new Vector2(0, _SpaceshipConfig.Speed.y));
-                    break;
-            }
         }
 
         public void MoveForward()
@@ -170,10 +160,18 @@ namespace NeonSpace
 
         private void OnGameStateHander(GameStateMessage gameStateMessage)
         {
-            if (gameStateMessage.GameState == GameState.Launch)
+            if (gameStateMessage.GameState == GameState.Launch || gameStateMessage.GameState == GameState.Menu)
             {
+                gameObject.SetActive(true);
                 _Shield.IncreaseEnergy(_Shield.MaxEnergy);
                 transform.position = Vector3.zero;
+                transform.rotation = Quaternion.identity;
+            }
+
+            if(gameStateMessage.GameState == GameState.Playing)
+            {
+                transform.Rotate(new Vector3(-10,0,0)); // ...
+                LeanTween.rotateX(gameObject, 10f, 3f).setRecursive(true).setLoopPingPong();
             }
         }
     }

@@ -21,7 +21,7 @@ namespace NeonSpace
 
         private void Start()
         {
-            
+
         }
 
         private void Update()
@@ -40,14 +40,7 @@ namespace NeonSpace
 
         private void OnGameStateHandler(GameStateMessage gameStateMessage)
         {
-            if(gameStateMessage.GameState == GameState.Menu)
-            {
 
-            }
-            else if(gameStateMessage.GameState == GameState.Playing && GameManager.PreviousGameState == GameState.Menu)
-            {
-
-            }
         }
 
         private IEnumerator ZoomInCamera()

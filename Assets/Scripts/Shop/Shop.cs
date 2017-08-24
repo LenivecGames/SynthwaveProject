@@ -7,7 +7,10 @@ namespace NeonSpace.Shop
     public class Shop : MonoBehaviour
     {
 
-        public ParticleSystem[] Trails;
+        public ConfigDatabase Items { get { return _Items; } }
+        [SerializeField]
+        private ConfigDatabase _Items;
+
 
 
         // Use this for initialization

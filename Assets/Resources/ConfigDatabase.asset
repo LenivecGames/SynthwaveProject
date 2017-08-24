@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42afb4a6c1b964241b83250f2eb1bcff, type: 3}
+  m_Name: ConfigDatabase
+  m_EditorClassIdentifier: 
+  SpaceshipConfigs:
+  - _Name: Default spaceship
+    _Sprite: {fileID: 21300000, guid: 2def3932d6f4b9d4bb62eb110c1507bb, type: 3}
+    _Speed: {x: 4, y: 4}
+  ShieldConfigs:
+  - _Name: Default shield
+    Sprite: {fileID: 21300000, guid: c728e4ee5dba87540ae0e234929531cf, type: 3}
+    Energy: 60
+  WeaponConfigs:
+  - _Name: Default weapon

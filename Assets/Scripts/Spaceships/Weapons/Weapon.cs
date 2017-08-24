@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using Lean;
+
 namespace NeonSpace
 {
     public class Weapon : MonoBehaviour
@@ -15,30 +17,52 @@ namespace NeonSpace
 
         public int PressureTime { get; private set; }
         public int Ammo { get; private set; }
-        private float _ReloadTime = 2f;
-        private bool _CanShoot = false;
+
+        public AudioClip ShootSound;
+
+        public WeaponConfig _Config { get; private set; }
+
+        //private float _ReloadTime;
+        public bool CanShoot{ get { return _CanShoot; } }
+        private bool _CanShoot = true;
 
         private void OnEnable()
         {
-            StartCoroutine(Reload());
+
         }
 
         private void Start()
         {
+
             Ammo = 30;
         }
+
+        /*protected virtual void BeginShoot()
+        {
+
+        }
+
+        protected virtual void CountinueShoot()
+        {
+
+        }
+
+        protected virtual void EndShoot()
+        {
+
+        }*/
 
         public void Shoot(int pressureTime)
         {
             if (_CanShoot && Ammo > 0)
             {
-                Instantiate(Shell, transform.position, Shell.transform.rotation);
-                Destroy(Instantiate(MuzzleFlash.gameObject, transform), MuzzleFlash.main.duration);
-
+                LeanPool.Spawn(Shell, transform.position, Shell.transform.rotation);
+                LeanPool.Despawn(LeanPool.Spawn(MuzzleFlash.gameObject, transform.position, transform.rotation, transform), MuzzleFlash.main.duration);
+                SoundManager.PlaySound(ShootSound);
                 Ammo--;
                 _CanShoot = false;
 
-                StartCoroutine(Reload());
+                Coroutiner.Start(Reload());
 
                 OnAmmoChangedEvent?.Invoke();
             }
@@ -52,12 +76,13 @@ namespace NeonSpace
 
         public void Configure(WeaponConfig config)
         {
-
+            _Config = config;
+            //_ReloadTime = config.ReloadTime;
         }
 
         private IEnumerator Reload()
         {
-            yield return new WaitForSeconds(_ReloadTime);
+            yield return new WaitForSeconds(_Config.ReloadTime);
             _CanShoot = true;
         }
 

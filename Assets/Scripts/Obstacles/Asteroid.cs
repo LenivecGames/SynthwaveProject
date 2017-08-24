@@ -43,6 +43,7 @@ namespace NeonSpace.Obstacles
         protected override void OnCollisionEnter2D(Collision2D collision)
         {
             base.OnCollisionEnter2D(collision);
+            //D2dDestructible.StampAll(transform.position, new Vector2(1, 1), 0, _DestructibleSprite.AlphaTex, 5);
 
             Rigidbody2D obstacleRigidbody = collision.collider.attachedRigidbody;
             ContactPoint2D contactPoint = collision.contacts[0];

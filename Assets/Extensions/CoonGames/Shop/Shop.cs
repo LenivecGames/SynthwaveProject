@@ -154,7 +154,7 @@ namespace CoonGames.Shop
         {
             Item item = GetItem(name);
 
-            if (item.Quantity == 0 || _Wallet?.Money > item.Price)
+            if (item.Quantity == 0 || _Wallet?.Money < item.Price)
                 return null;
 
             T commodity = new T();

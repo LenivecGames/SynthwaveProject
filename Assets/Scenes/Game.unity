@@ -32144,10 +32144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Obstacles:
-  - Obstacle: {fileID: 114431066272920380, guid: 3a326c5d9a58ae7478d6f10af9e5331c,
-      type: 2}
-    BaseProbability: 0.5
-  - Obstacle: {fileID: 114360407590631990, guid: be7b842148fd651409980003023381db,
+  - Obstacle: {fileID: 114584203375451374, guid: 3a326c5d9a58ae7478d6f10af9e5331c,
       type: 2}
     BaseProbability: 0.5
   - Obstacle: {fileID: 114463681685215238, guid: 87a81a146d3d9f64ea1343da9d98f07b,

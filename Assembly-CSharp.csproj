@@ -374,9 +374,9 @@
      <Compile Include="Assets\Scripts\GradientTest.cs" />
      <Compile Include="Assets\Scripts\IDamageable.cs" />
      <Compile Include="Assets\Scripts\IncreaseDecreaseType.cs" />
+     <Compile Include="Assets\Scripts\LevelGenerator.cs" />
      <Compile Include="Assets\Scripts\Managers\EventManager.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Managers\GeneratorManager.cs" />
      <Compile Include="Assets\Scripts\Managers\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Managers\UIManager.cs" />

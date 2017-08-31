@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynthwaveProject", "SynthwaveProject.csproj", "{6619795C-227B-FBAC-F52F-C52F21AE1D4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynthwaveProject.Plugins", "SynthwaveProject.Plugins.csproj", "{A330CD75-82B6-39BB-0D04-1E255C4A08D3}"
